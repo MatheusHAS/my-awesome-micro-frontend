@@ -1,0 +1,16 @@
+{
+  "name": "single-spa",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "concurrently \"npm:run:*\"",
+    "install": "concurrently \"npm:install:*\"",
+    "run:navbar": "cd navbar && npm start",
+    "run:wrapper": "cd wrapper && npm start",
+    "install:navbar": "cd navbar && npm install",
+    "install:wrapper": "cd wrapper && npm install"
+  },
+  "author": "matheushas",
+  "devDependencies": {
+    "concurrently": "^7.5.0"
+  }
+}
